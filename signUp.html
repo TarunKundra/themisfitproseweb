@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Sign Up</title>
+</head>
+
+<style>
+    #logInImage {
+        width: 200px;
+        height: 200px;
+    }
+
+    .image_icon {
+        margin-left: auto;
+        display: block;
+        width: 50%;
+        margin-right: auto;
+    }
+</style>
+
+<body>
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img style="height: 40px; width: 40px; padding: 1px;" src="misfit_logo.jpeg" class="img-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse topnav" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a style="font-size: large;" class="nav-link" href="index.html">The Misfit Prose</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a style="font-size: large;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a style="font-size: large;" class="dropdown-item" href="#">The Venture</a>
+                        <a style="font-size: large;" class="dropdown-item" href="founders.html">Founders</a>
+                        <a class="dropdown-item" href="history.html">History</a>
+                        <a class="dropdown-item" href="vision.html">Vision</a>
+                        <a class="dropdown-item" href="affilation.html">Affilation</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a style="font-size: large;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our Events
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a style="font-size: large;" class="dropdown-item" href="#">QuaranType</a>
+                        <a style="font-size: large;" class="dropdown-item" href="#">Tale Me</a>
+                        <a class="dropdown-item" href="#">Digital Poetry</a>
+                        <a class="dropdown-item" href="#">Alfaaz-e-Khayaal</a>
+                        <a class="dropdown-item" href="#">Bazm-e-Lafz</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a style="font-size: large;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our Workshops
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a style="font-size: large;" class="dropdown-item" href="#">Misfit</a>
+                        <a style="font-size: large;" class="dropdown-item" href="#">Misfit</a>
+                        <a class="dropdown-item" href="#">Misfit</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a style="font-size: large;" class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a style="font-size: large;" class="nav-link" href="#">Careers</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <a href="signUp.html"><button class="btn btn-danger" data-toggle="modal"
+                        data-target="#signUpModal">SignUp</button></a>
+                <a href="login.html"><button class="btn btn-success" data-toggle="modal"
+                        data-target="#logInModal">LogIn</button></a>
+            </div>
+        </div>
+    </nav>
+    <!-- navigation bar end -->
+
+    <!-- contact form -->
+    <div class="jumbotron p-4 text-white rounded bg-dark">
+        <h2>Sign Up:</h2>
+    </div>
+    <img class="image_icon" id="logInImage" src="misfit_logo_png.png" alt="">
+    <div class="container">
+        <div class="form-group">
+            <label for="inputEmail">Email Address</label>
+            <input type="email" placeholder="email@example.com" class="form-control" id="inputEmail">
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" placeholder="**********" class="form-control" id="inputPassword">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="inputPassword">Confirm Password</label>
+                    <input type="password" placeholder="**********" class="form-control" id="inputPassword">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="inputPhone">Phone Number</label>
+                    <input type="phone" placeholder="**********" class="form-control" id="inputPhone">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="inputPhone">DOB</label>
+                    <input type="date" placeholder="" class="form-control" id="inputPhone">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button style="width: 30%; display: block; margin-left: auto; margin-right: auto;" id="button_form" type="button" class="btn btn-primary btn-lg btn-block">Log-In</button>
+                <button style="width: 30%; display: block; margin-left: auto; margin-right: auto;" id="button_form" type="button" class="btn btn-primary btn-lg btn-block">Sign-Up</button>
+            </div>
+        </div>
+    </div>
+    <!-- contact form end -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
