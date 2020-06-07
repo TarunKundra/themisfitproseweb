@@ -25,6 +25,27 @@
         width: 50%;
         margin-right: auto;
     }
+    .myrow::after{
+        display: table;
+        content: "";
+        clear: both;
+    }
+    .mycol1{
+        width: 50%;
+        float: left;
+    }
+    .mycol2{
+        width: 50%;
+        float: left;
+    }
+    @media only screen and (max-width: 600px) {
+        .mycol1{
+            width: 100%;
+        }
+        .mycol2{
+            width: 100%;
+        }
+    }
 </style>
 
 <body>
@@ -50,9 +71,9 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a style="font-size: large;" class="dropdown-item" href="#">The Venture</a>
                         <a style="font-size: large;" class="dropdown-item" href="founders.html">Founders</a>
-                        <a class="dropdown-item" href="history.html">History</a>
-                        <a class="dropdown-item" href="vision.html">Vision</a>
-                        <a class="dropdown-item" href="affilation.html">Affilation</a>
+                        <a style="font-size: large;" class="dropdown-item" href="history.html">History</a>
+                        <a style="font-size: large;" class="dropdown-item" href="vision.html">Vision</a>
+                        <a style="font-size: large;" class="dropdown-item" href="affilation.html">Affilation</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -63,9 +84,9 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a style="font-size: large;" class="dropdown-item" href="#">QuaranType</a>
                         <a style="font-size: large;" class="dropdown-item" href="#">Tale Me</a>
-                        <a class="dropdown-item" href="#">Digital Poetry</a>
-                        <a class="dropdown-item" href="#">Alfaaz-e-Khayaal</a>
-                        <a class="dropdown-item" href="#">Bazm-e-Lafz</a>
+                        <a style="font-size: large;" class="dropdown-item" href="#">Digital Poetry</a>
+                        <a style="font-size: large;" class="dropdown-item" href="#">Alfaaz-e-Khayaal</a>
+                        <a style="font-size: large;" class="dropdown-item" href="#">Bazm-e-Lafz</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -76,7 +97,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a style="font-size: large;" class="dropdown-item" href="#">Misfit</a>
                         <a style="font-size: large;" class="dropdown-item" href="#">Misfit</a>
-                        <a class="dropdown-item" href="#">Misfit</a>
+                        <a style="font-size: large;" class="dropdown-item" href="#">Misfit</a>
                     </div>
                 </li>
                 <li class="nav-item active">
@@ -91,35 +112,40 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
             <div class="mx-2">
-                <a href="signUp.html"><button class="btn btn-danger" data-toggle="modal"
-                        data-target="#signUpModal">SignUp</button></a>
+                <a href="signUp.html"><button class="btn btn-primary" data-toggle="modal"
+                        data-target="#signUpModal">Signup</button></a>
                 <a href="login.html"><button class="btn btn-success" data-toggle="modal"
-                        data-target="#logInModal">LogIn</button></a>
+                        data-target="#logInModal">Login</button></a>
             </div>
         </div>
     </nav>
     <!-- navigation bar end -->
 
     <!-- contact form -->
-    <div class="jumbotron p-4 text-white rounded bg-dark">
-        <h2>Log In:</h2>
-    </div>
-    <img class="image_icon" id="logInImage" src="misfit_logo_png.png" alt="">
-    <div class="container">
-        <div class="form-group">
-            <label for="inputEmail">Email Address</label>
-            <input type="email" placeholder="email@example.com" class="form-control" id="inputEmail">
-        </div>
-        <div class="form-group">
-            <label for="inputPassword">Password</label>
-            <input type="password" placeholder="**********" class="form-control" id="inputPassword">
-        </div>
-        <div class="row">
-            <div class="col">
-                <button style="width: 30%; display: block; margin-left: auto; margin-right: auto;" id="button_form" type="button" class="btn btn-primary btn-lg btn-block">Log-In</button>
-                <button style="width: 30%; display: block; margin-left: auto; margin-right: auto;" id="button_form" type="button" class="btn btn-primary btn-lg btn-block">Sign-Up</button>
+    <div class="container" style="margin-top: 20px;">
+        <div class="jumbotron p-4 text-white rounded bg-dark">
+            <h2>Log In</h2>
+            <div class="myrow">
+                <div class="mycol1">
+                    <img class="image_icon" id="logInImage" src="misfit_logo_png.png" alt="">
+                </div>
+                <div class="mycol2">
+                    <div class="container">
+                        <form action="">
+                            <label for="inputEmail">Email Address</label>
+                            <input type="email" placeholder="email@example.com" class="form-control" id="inputEmail">
+    
+                            <label for="inputPassword">Password</label>
+                            <input type="password" placeholder="**********" class="form-control" id="inputPassword">
+    
+                            <button style="margin-top: 12px;width: 50%; display: block; margin-left: auto; 
+                            margin-right: auto;" id="button_form" type="button" 
+                            class="btn btn-primary btn-lg btn-block">Log-In</button>
+
+                        </form>
+                    </div>
+                </div>
             </div>
-            
         </div>
     </div>
     <!-- contact form end -->
